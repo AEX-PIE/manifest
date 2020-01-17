@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <project path="manifest" name="manifest" remote="aex" />
+  <project path="manifest" name="manifest" remote="aexp" />
   <project path="art" name="platform_art" groups="pdk" remote="aex" />
   <project path="bionic" name="platform_bionic" groups="pdk" remote="aex" />
   <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="aex" />
   <project path="build/kati" name="platform_build_kati" groups="pdk,tradefed" remote="aex" />
-  <project path="build/make" name="platform_build" groups="pdk" remote="aex" >
+  <project path="build/make" name="platform_build" groups="pdk" remote="aexp" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -36,8 +36,8 @@
   <project path="frameworks/opt/net/wifi" name="platform_frameworks_opt_net_wifi" groups="pdk" remote="aex" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" groups="pdk" remote="aex" />
   <project path="frameworks/av" name="platform_frameworks_av" groups="pdk" remote="aex" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aex" />
-  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="aex" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="aexp" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="aexp" />
   <project path="frameworks/support" name="platform_frameworks_support" groups="pdk" remote="aex" />
   <project path="hardware/aosp/interfaces" name="platform_hardware_aosp_interfaces" remote="aex" />
   <project path="packages/apps/Bluetooth" name="platform_packages_apps_Bluetooth" groups="pdk-fs" remote="aex" />
@@ -64,7 +64,7 @@
   <project path="packages/apps/SmartNavSettings" name="platform_packages_apps_SmartNavSettings" remote="aex" />
   <project path="packages/apps/Terminal" name="platform_packages_apps_Terminal" remote="aex" />
   <project path="packages/apps/Jelly" name="platform_packages_apps_Jelly" remote="aex" />
-  <project path="packages/apps/Updates" name="platform_packages_apps_Updates" groups="pdk-fs" remote="aex" />
+  <project path="packages/apps/Updates" name="platform_packages_apps_Updates" groups="pdk-fs" remote="aexp" />
   <project path="packages/apps/WeatherClient" name="platform_packages_apps_WeatherClient" remote="aex" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="aex" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="aex" />
@@ -76,9 +76,9 @@
   <project path="packages/services/BuiltInPrintService" name="android_packages_services_BuiltInPrintService" remote="los" />
   <project path="packages/resources/devicesettings" name="platform_packages_resources_devicesettings" remote="aex" />
   <project path="prebuilts/build-tools" name="platform_prebuilts_build-tools" remote="aex" />
-  <project path="system/bt" name="platform_system_bt" remote="aex" />
+  <project path="system/bt" name="platform_system_bt" remote="aexp" />
   <project path="system/qcom" name="platform_system_qcom" groups="pdk" remote="aex" />
-  <project path="system/core" name="platform_system_core" groups="pdk" remote="aex" />
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="aexp" />
   <project path="system/extras" name="platform_system_extras" groups="pdk" remote="aex" />
   <project path="system/netd" name="platform_system_netd" groups="pdk" remote="aex" />
   <project path="system/nfc" name="android_system_nfc" groups="pdk" remote="los" />
@@ -101,7 +101,7 @@
 <!--  <project path="hardware/qcom/audio-caf/sdm845" name="android_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" remote="los" revision="lineage-16.0-caf-845" />-->
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" />
   <project path="hardware/qcom/display-caf/apq8084" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8084" />
-  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8916" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="aexp" revision="lineage-16.0-caf-8916" />
   <project path="hardware/qcom/display-caf/msm8952" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8952" />
   <project path="hardware/qcom/display-caf/msm8960" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8960" />
   <project path="hardware/qcom/display-caf/msm8974" name="android_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" remote="los" revision="lineage-16.0-caf-8974" />
@@ -128,6 +128,7 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="los" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" groups="pdk" remote="los" />
   <project path="hardware/interfaces" name="platform_hardware_interfaces" groups="pdk" remote="aex" />
+  <project name="android_hardware_lineage_telephony" path="hardware/lineage/telephony" remote="los" />
 
 
   <!-- Ant Wireless -->
